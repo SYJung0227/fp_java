@@ -51,5 +51,16 @@ public class Main {
 		};
 		printer3.print();
 
+		RandomExtectable radomNumber = new RandomExtectable() {
+			@Override
+			public double getRandom() {
+				return Math.random();
+			}
+		};
+		System.out.println(radomNumber.getRandom());
+		
+		RandomExtectable radomNumber2 =()-> Math.random();
+		System.out.println(radomNumber2.getRandom());
 	}
+
 }
